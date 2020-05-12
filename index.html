@@ -1,289 +1,85 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-	<meta property="og:locale" content="pt_BR" />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://tech-espm.github.io/journalclub/" />
-	<meta property="og:title" content="Journal Club ESPM TECH" />
-	<meta property="og:site_name" content="Journal Club ESPM TECH" />
-	<meta property="og:description" content="Journal Club do curso de TECH da ESPM" />
-	<meta property="og:image" content="https://tech-espm.github.io/journalclub/assets/images/bg.jpg" />
-	<meta property="og:image:type" content="image/jpeg" />
-	<meta property="og:image:width" content="1920" />
-	<meta property="og:image:height" content="1267" />
-	<meta name="author" content="ESPM" />
-	<meta name="description" content="Journal Club do curso de TECH da ESPM" />
-	<meta name="keywords" content="journal club, journal, club, ESPM, TECH" />
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-	<meta name="apple-mobile-web-app-title" content="Journal Club ESPM TECH" />
-	<link rel="apple-touch-icon" sizes="57x57" href="/journalclub/assets/favicons/apple-icon-57x57.png" />
-	<link rel="apple-touch-icon" sizes="60x60" href="/journalclub/assets/favicons/apple-icon-60x60.png" />
-	<link rel="apple-touch-icon" sizes="72x72" href="/journalclub/assets/favicons/apple-icon-72x72.png" />
-	<link rel="apple-touch-icon" sizes="76x76" href="/journalclub/assets/favicons/apple-icon-76x76.png" />
-	<link rel="apple-touch-icon" sizes="114x114" href="/journalclub/assets/favicons/apple-icon-114x114.png" />
-	<link rel="apple-touch-icon" sizes="120x120" href="/journalclub/assets/favicons/apple-icon-120x120.png" />
-	<link rel="apple-touch-icon" sizes="144x144" href="/journalclub/assets/favicons/apple-icon-144x144.png" />
-	<link rel="apple-touch-icon" sizes="152x152" href="/journalclub/assets/favicons/apple-icon-152x152.png" />
-	<link rel="apple-touch-icon" sizes="180x180" href="/journalclub/assets/favicons/apple-icon-180x180.png" />
-	<link rel="icon" type="image/png" sizes="512x512" href="/journalclub/assets/favicons/favicon-512x512.png" />
-	<link rel="icon" type="image/png" sizes="192x192" href="/journalclub/assets/favicons/favicon-192x192.png" />
-	<link rel="icon" type="image/png" sizes="96x96" href="/journalclub/assets/favicons/favicon-96x96.png" />
-	<link rel="icon" type="image/png" sizes="48x48" href="/journalclub/assets/favicons/favicon-48x48.png" />
-	<link rel="icon" type="image/png" sizes="32x32" href="/journalclub/assets/favicons/favicon-32x32.png" />
-	<link rel="icon" type="image/png" sizes="16x16" href="/journalclub/assets/favicons/favicon-16x16.png" />
-	<link rel="Shortcut Icon" href="/journalclub/assets/favicons/favicon.png" />
-	<link rel="manifest" href="/journalclub/assets/favicons/manifest.json" />
-	<meta name="msapplication-config" content="/journalclub/assets/favicons/browserconfig.xml" />
-	<meta name="theme-color" content="#222222" />
-
-	<title>Journal Club ESPM TECH</title>
-
-	<link href="https://fonts.googleapis.com/css?family=Raleway:200,400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
-
-	<style type="text/css">
-		html {
-			min-height: 100%;
-			height: 100%;
-		}
-
-		body {
-			font-family: Raleway, sans-serif;
-			background-image: url(/journalclub/assets/images/bg.jpg);
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: center;
-			background-attachment: fixed;
-			min-height: 100%;
-			height: 100%;
-		}
-
-		hr {
-			border-color: #aaa;
-		}
-
-		.panel {
-			background-color: rgba(255,255,255,0.85);
-			-webkit-box-shadow: 0 2px 8px rgba(0,0,0,.5);
-			box-shadow: 0 2px 8px rgba(0,0,0,.5);
-		}
-
-		.painel-msg {
-			text-align: center;
-			max-width: 600px;
-			margin: 0 auto;
-			padding: 10% 15px 15px;
-		}
-
-		.painel-msg h1, painel-msg h2 {
-			margin: 15px;
-		}
-
-		.btn {
-			white-space: normal;
-		}
-
-		.badge-sala {
-			font-size: inherit;
-			white-space: normal;
-		}
-
-		.form-control {
-			-webkit-box-shadow: 0 1px 0 #bbb;
-			box-shadow: 0 1px 0 #bbb;
-		}
-
-		p {
-			margin: 0;
-		}
-
-		p + p {
-			margin-top: 25px;
-		}
-
-		.hdr-banner {
-			position: relative;
-			padding: 100px 0 0;
-			width: 100%;
-			height: 100%;
-			min-height: 400px;
-			overflow: hidden;
-			text-align: center;
-			font-weight: 400;
-			color: #fff;
-			text-shadow: 0 0 4px rgba(255,255,255,0.75);
-		}
-
-		#hdr-container, .secao {
-			/*background-color: rgba(0,0,0,0.75);*/
-			background-image: url(/journalclub/assets/images/bgblur.jpg);
-			background-size: cover;
-			background-repeat: no-repeat;
-			background-position: center;
-			background-attachment: fixed;
-		}
-
-		#hdr-container {
-			position: absolute;
-			z-index: 1;
-			left: 0;
-			right: 0;
-			top: 10%;
-			margin: 0;
-			padding: 20px;
-		}
-
-		#hdr-titulo {
-			font-size: 40px;
-		}
-
-		#hdr-logo {
-			padding-top: 20px;
-			font-size: 50px;
-			line-height: 70px;
-		}
-
-			#hdr-logo > img {
-				max-width: 100%;
-			}
-
-		.secao {
-			padding: 100px;
-			color: #fff;
-			font-size: 25px;
-		}
-
-			.secao > div {
-				max-width: 1000px;
-				margin: 0 auto;
-			}
-
-			.secao h1 {
-				font-weight: 200;
-				text-align: left;
-				margin: 0 0 60px;
-			}
-
-		.secao + .secao, .secao > div + div {
-			margin-top: 100px;
-		}
-
-		.float-icon {
-			float: left;
-			font-size: 2em;
-			margin: 0 20px 5px 0;
-		}
-
-		@media (max-width: 500px) {
-			#hdr-titulo {
-				font-size: 30px;
-			}
-
-			#hdr-logo {
-				font-size: 40px;
-				line-height: 60px;
-			}
-
-			.secao {
-				padding: 70px 50px;
-			}
-
-			.secao + .secao, .secao > div + div {
-				margin-top: 100px;
-			}
-		}
-
-		@media (max-width: 400px) {
-			#hdr-titulo {
-				font-size: 25px;
-			}
-
-			#hdr-logo {
-				font-size: 35px;
-				line-height: 55px;
-			}
-
-			.secao {
-				padding: 50px 30px;
-			}
-
-			.secao + .secao, .secao > div + div {
-				margin-top: 50px;
-			}
-		}
-	</style>
-</head>
-<body>
-
-	<header class="hdr-banner">
-		<div id="hdr-container">
-			<h1 id="hdr-titulo">Journal Club</h1>
-			<h2 id="hdr-logo">
-				<img alt="ESPM" width="256" src="/journalclub/assets/images/logo.png" /> TECH
-			</h2>
-		</div>
-	</header>
-
-	<section class="secao">
-		<div>
-			<h1>
-				<i class="fa fa-quote-left"></i> O que é um journal club?
-			</h1>
-			<p>
-				Um journal club é um grupo de pessoas que se reúne regularmente para avaliar e comentar artigos acadêmicos.
-			</p>
-		</div>
-
-		<div>
-			<h1>
-				<i class="fa fa-info-circle"></i> Existe um journal club em TECH?
-			</h1>
-			<p>
-				Está nascendo&hellip;
-			</p>
-			<p>
-				Os encontros ocorrerão de maneira remota às sextas-feiras, <i>rigorosamente</i> das 08:30 às 09:00 da manhã.
-			</p>
-			<p>
-				Durante os encontros, dois participantes irão apresentar <i>sucintamente</i> seu objeto de estudo, para que depois os outros participantes possam comentar (tudo em até 30 minutos 😅).
-			</p>
-			<p>
-				<i>Não existem "aulas" no journal club. Todos estão estudando, aprendendo e comentando!</i>
-			</p>
-		</div>
-
-		<div>
-			<h1>
-				<i class="fa fa-question-circle"></i> Quem pode participar?
-			</h1>
-			<p>
-				Qualquer aluno ou funcionário da ESPM pode participar!!!
-			</p>
-			<p>
-				Inicialmente estão confirmados os professores Humberto Sandmann, Fabrício Barth e Carlos Rafael. Mas a lista vai crescer&hellip;
-			</p>
-		</div>
-
-		<div>
-			<h1>
-				<i class="fa fa-calendar"></i> Data de início e informações de acesso
-			</h1>
-			<p>
-				O primeiro encontro ocorrerá através do Zoom, sexta-feira, dia 08 de maio às 08:30.
-			</p>
-			<p>
-				O link para a reunião aparecerá aqui em breve 😉
-			</p>
-		</div>
-	</section>
-
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://gzsig.github.io/g-ui/style.css" />
+    <title>Journal Club</title>
+    <link rel="icon" href="./img/favicon.ico" type="image/png" />
+  </head>
+  <body>
+    <div class="g-nav">
+      <div class="g-nav-content">
+        <div class="g-nav-logo">
+          <div class="g-header3">Journal Club</div>
+        </div>
+        <div class="g-nav-items">
+          <div
+            class="g-img"
+            style="
+              background-image: url(img/logo-techPNG.png);
+              height: 34px;
+              width: 96px;
+            "
+          ></div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br />
+    <div class="g-container">
+      <div class="g-header4">O que é um journal club 🤷‍♂️</div>
+      <ul>
+        <li>
+          Um journal club é um grupo de pessoas que se reúne regularmente para
+          avaliar e comentar artigos acadêmicos.
+        </li>
+      </ul>
+      <div class="g-header4">Existe um journal club em TECH? 🤔</div>
+      <ul>
+        <li>Ainda não existe, mas está nascendo…</li>
+        <li>
+          Os encontros ocorrerão de maneira remota às sextas-feiras,
+          rigorosamente das 08:30 às 09:00 da manhã.
+        </li>
+        <li>
+          Durante os encontros, dois participantes irão apresentar sucintamente
+          seu objeto de estudo, para que depois os outros participantes possam
+          comentar (tudo em até 30 minutos).
+        </li>
+        <li>
+          Não existem "aulas" no journal club. Todos estão estudando, aprendendo
+          e comentando!/li>
+        </li>
+      </ul>
+      <div class="g-header4">Posso pode participar❓</div>
+      <ul>
+        <li>Qualquer aluno ou funcionário da ESPM pode participar!!!</li>
+        <li>
+          Inicialmente estão confirmados os professores Carlos Rafael e Humberto
+          Sandmann. Mas a lista vai crescer…
+        </li>
+        <li>
+          Fique de olho nesta página para mais informações sobre data de início,
+          forma de acesso e outras informações!
+        </li>
+      </ul>
+      <div class="g-header4">Próximos encontros 📅</div>
+      <ul>
+        <li>
+          22 de maio
+          <ul>
+            <li>Humberto Sandmann (assunto)</li>
+            <li>Carlos Rafael (assunto)</li>
+            <li>Gabriel Zsigmond (assunto)</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="g-header4">Participantes 👥</div>
+      <ul>
+        <li>Humberto Sandmann</li>
+        <li>Carlos Rafael</li>
+        <li>Gabriel Zsigmond</li>
+      </ul>
+    </div>
+  </body>
 </html>
